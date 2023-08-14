@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #con1{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 300px;
+        padding-right: 300px;
+        margin-top: 150px;
+    }
+    #con2,#con3{
+        border: 10px  solid #900C3F;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #27374D;
+        
+    }
+    #con2:hover,#con3:hover{
+        box-shadow: 0px 0px 7px 7px rgb(127, 5, 241);
+    }
+    nav{
+        border-bottom: inset 3px #e0b20c;
+        width: 180px;
+        height: 50px;
+        padding-left: 10px;
+        border-radius: 50px;
+        padding-top: 0px;
+        margin-top: 75px;
+        text-align: center;
+        align-items: center;
+        color: #F8DE22;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        text-overflow: inherit;
+  }
+  button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #btn1:active,#btn3:active{
+    box-shadow: 0px 0px 7px 7px greenyellow;
+    color: fuchsia;
+ 
+}
+
+#btn2:active,#btn4:active{
+    box-shadow:0px 0px 7px 7px red ;
+    color: red;
+}
+p{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(128, 10, 239);
+    font-weight:bolder;
+    text-shadow: 5px 5px 5px yellow;
+}
+#reset{
+  margin-left: 670px;
+}
+#reset:active{
+  box-shadow: 0px 0px 7px 7px yellow;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  
+  #con1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  #con2, #con3 {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+  }
+  
+  nav {
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+  }
+  
+  button {
+    margin: 10px;
+    font-size: 12px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  #reset{
+    margin-left: 170px;
+    margin-bottom: 100px;
+  }
+}
+
+</style>
+<body>
+   <div id="con1">
+    <p>Simple</p>
+    <div id="con2">
+        
+        <nav id="display1">#FFFFFF</nav><br>
+        <button id="btn1">Start</button>
+        <button id="btn2">Stop</button>
+    </div>
+    <p>Gradient</p>
+    <div id="con3">
+      
+        <nav id="display2">#FFFFFF,#FFFFFF</nav><br>
+        <button id="btn3">Start</button>
+        <button id="btn4">Stop</button>
+     
+    </div>
+   </div> 
+   <button id="reset">Reset</button>
+</body>
+<script src="script.js"></script>
+</html>
