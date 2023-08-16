@@ -21,13 +21,11 @@ btn3.addEventListener("click",() =>{
 });
 btn2.addEventListener("click",() =>{
     clearInterval(interval1);
-    interval1=null;
-    },1000);
+});
   
-    btn4.addEventListener("click",() =>{
+btn4.addEventListener("click",() =>{
         clearInterval(interval2);
-        interval2=null;
-        },1000);    
+ });    
 const randomColor = function(){
     const red= Math.floor(Math.random()*256);
     const green= Math.floor(Math.random()*256);
